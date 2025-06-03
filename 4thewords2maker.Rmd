@@ -1,0 +1,8 @@
+```{r}
+load("4thewords.rdata")
+df2 = df[,-2]
+df2$words = strtoi(df2$words)
+df2$min = strtoi(df2$min)
+save(df2,file="4thewords2.rdata")
+```
+
